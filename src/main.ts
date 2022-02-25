@@ -1,5 +1,2 @@
-export const implement = (): void => {
-  throw new Error('implement');
-}
-
-export default implement;
+export * from "./redis/redis.module";
+export * from "./redis/redis.client";

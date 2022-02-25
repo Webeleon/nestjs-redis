@@ -1,8 +1,8 @@
-import implement from './main';
+import { RedisModule, REDIS_CLIENT, RedisClientType } from "./main";
 
-describe('main', () => {
-  it('is defined', () => {
-      expect(implement).toBeDefined();
-      expect(() => implement()).toThrow();
+describe("main exports", () => {
+  it("is defined", () => {
+    expect(RedisModule).toBeDefined();
+    expect(REDIS_CLIENT).toBeDefined();
   });
 });
