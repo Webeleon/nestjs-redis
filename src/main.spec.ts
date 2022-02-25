@@ -1,4 +1,4 @@
-import { RedisModule, REDIS_CLIENT, RedisClientType } from "./main";
+import { RedisModule, REDIS_CLIENT } from "./main";
 
 describe("main exports", () => {
   it("is defined", () => {

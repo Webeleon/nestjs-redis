@@ -46,6 +46,22 @@ export class RedisModule {
     };
   }
 
+  public static forFeature(): DynamicModule {
+    return {
+      module: RedisModule,
+      providers: [
+        RedisProvider,
+        {
+          provide: REDIS_CLIENT,
+          useFactory: async (redisProvider: RedisProvider) =>
+            await redisProvider.getClient(),
+          inject: [RedisProvider],
+        },
+      ],
+      exports: [REDIS_CLIENT],
+    };
+  }
+
   private static createConfigProviders(
     options: RedisModuleAsyncOptions
   ): Provider {
