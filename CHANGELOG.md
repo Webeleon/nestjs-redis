@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/Webeleon/nestjs-redis/compare/v0.0.2...v0.0.3) (2022-02-25)
+
+
+### Bug Fixes
+
+* install rxjs ([70ddb09](https://github.com/Webeleon/nestjs-redis/commit/70ddb093b6991405fdbc93a15287dcf95062117f))
+
 ### [0.0.2](https://github.com/Webeleon/nestjs-redis/compare/v0.0.1...v0.0.2) (2022-02-25)
 
 
