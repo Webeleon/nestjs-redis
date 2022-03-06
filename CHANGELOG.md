@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/Webeleon/nestjs-redis/compare/v0.0.7...v0.0.8) (2022-03-06)
+
+
+### Bug Fixes
+
+* make redis option optional ([e5d52ac](https://github.com/Webeleon/nestjs-redis/commit/e5d52ac8e9b7dfa24d369f3a0d0744e1b07ff354))
+
 ### [0.0.7](https://github.com/Webeleon/nestjs-redis/compare/v0.0.6...v0.0.7) (2022-03-06)
 
 
