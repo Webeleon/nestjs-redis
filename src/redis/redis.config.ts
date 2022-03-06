@@ -5,8 +5,8 @@ export interface RedisConnectionOptions {
 }
 
 export interface RedisModuleAsyncOptions {
-  imports: any[];
-  inject: any[];
+  imports?: any[];
+  inject?: any[];
   useFactory: (
     ...args: any[]
   ) => Promise<RedisConnectionOptions> | RedisConnectionOptions;
