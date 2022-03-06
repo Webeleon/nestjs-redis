@@ -31,6 +31,7 @@ export class RedisModule {
 
   public static forRootAsync(options: RedisModuleAsyncOptions): DynamicModule {
     return {
+      imports: options.imports,
       module: RedisModule,
       providers: [
         RedisProvider,
