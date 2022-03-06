@@ -1,6 +1,6 @@
 {
   "name": "@webeleon/nestjs-redis",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A redis client for NestJS",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",

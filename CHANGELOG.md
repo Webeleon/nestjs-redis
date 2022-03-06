@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/Webeleon/nestjs-redis/compare/v0.0.5...v0.0.6) (2022-03-06)
+
+
+### Bug Fixes
+
+* add imports in forRootAsync constructor ([b0c41d8](https://github.com/Webeleon/nestjs-redis/commit/b0c41d8ef7545ef4871b962926506bc9de4c273c))
+
 ### [0.0.5](https://github.com/Webeleon/nestjs-redis/compare/v0.0.4...v0.0.5) (2022-03-06)
 
 
