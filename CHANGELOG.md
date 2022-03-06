@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/Webeleon/nestjs-redis/compare/v0.0.6...v0.0.7) (2022-03-06)
+
+
+### Bug Fixes
+
+* make imports and inject optional ([e82a6b4](https://github.com/Webeleon/nestjs-redis/commit/e82a6b4fe8b66b356c5a228815cae07d4815d8c7))
+
 ### [0.0.6](https://github.com/Webeleon/nestjs-redis/compare/v0.0.5...v0.0.6) (2022-03-06)
 
 
