@@ -1,4 +1,4 @@
-import { Inject, Injectable, Logger } from "@nestjs/common";
+import { Inject, Injectable, Logger, Optional } from "@nestjs/common";
 import { REDIS_OPTIONS, RedisConnectionOptions } from "./redis.config";
 import { createClient } from "redis";
 import { REDIS_CLIENT, RedisClient } from "./redis.client";
@@ -8,7 +8,9 @@ export class RedisProvider {
   client: RedisClient;
 
   constructor(
-    @Inject(REDIS_OPTIONS) private readonly options: RedisConnectionOptions
+    @Optional()
+    @Inject(REDIS_OPTIONS)
+    private readonly options: RedisConnectionOptions
   ) {}
 
   async getClient(): Promise<RedisClient> {
