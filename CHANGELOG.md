@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/Webeleon/nestjs-redis/compare/v0.0.8...v0.0.9) (2022-03-07)
+
+
+### Features
+
+* make module global ([4a5b989](https://github.com/Webeleon/nestjs-redis/commit/4a5b989241a6c0439983d1e27e31c87228df7fcd))
+
 ### [0.0.8](https://github.com/Webeleon/nestjs-redis/compare/v0.0.7...v0.0.8) (2022-03-06)
 
 
