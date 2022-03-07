@@ -21,6 +21,7 @@ export class RedisProvider {
       Logger.error(error.message, error.stack, REDIS_CLIENT);
     });
     this.client.on("connect", () => {
+      Logger.verbose(this.options, RedisProvider.name);
       Logger.log("client connected", REDIS_CLIENT);
     });
 
