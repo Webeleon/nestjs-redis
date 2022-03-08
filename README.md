@@ -56,17 +56,7 @@ export class AppModule {}
 
 ## Usage
 
-```ts
-import { Module } from '@nestjs/common';
-import { RedisModule } from '@webeleon/nestjs-redis';
-
-@Module({
-  imports: [
-    RedisModule.forFeature()
-  ]
-})
-export class FeatureModule {}
-```
+This package is globally providing `REDIS_CLIENT`
 
 ```ts
 import { Injectable } from '@nestjs/common';
