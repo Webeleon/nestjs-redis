@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/Webeleon/nestjs-redis/compare/v0.0.9...v0.0.11) (2022-03-11)
+
+
+### Features
+
+* add a @InjectRedisClient decorator ([1c05bfa](https://github.com/Webeleon/nestjs-redis/commit/1c05bfa17d4c5a9c615b94d1560169d7136947d9))
+* remove forFeature until i figure out how to implement it correctly ([e46581d](https://github.com/Webeleon/nestjs-redis/commit/e46581d5349f4c704cd0c86ac2cad6dd6c52c883))
+
 ### [0.0.10](https://github.com/Webeleon/nestjs-redis/compare/v0.0.9...v0.0.10) (2022-03-08)
 
 
