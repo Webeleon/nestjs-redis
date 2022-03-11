@@ -60,12 +60,12 @@ This package is globally providing `REDIS_CLIENT`
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { REDIS_CLIENT, RedisClient } from '@webeleon/nestjs-redis';
+import { InjectRedisClient, RedisClient } from '@webeleon/nestjs-redis';
 
 @Injectable()
 export class SomeService {
   constructor(
-    @Inject(REDIS_CLIENT) redisClient: RedisClient
+    @InjectRedisClient() redisClient: RedisClient
   ) {}
 }
 ```
