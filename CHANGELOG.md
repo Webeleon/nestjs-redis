@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/Webeleon/nestjs-redis/compare/v0.0.11...v0.1.0) (2023-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* implement forFeature method on the module
+
+### Features
+
+* implement forFeature method on the module ([23b0c88](https://github.com/Webeleon/nestjs-redis/commit/23b0c887247dbcca27645e4c17b7a5623f4200b4))
+
 ### [0.0.11](https://github.com/Webeleon/nestjs-redis/compare/v0.0.9...v0.0.11) (2022-03-11)
 
 
