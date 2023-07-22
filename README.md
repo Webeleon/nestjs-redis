@@ -56,8 +56,19 @@ export class AppModule {}
 
 ## Usage
 
-This package is globally providing `REDIS_CLIENT`
+Import the `RedisModule.forFeature()` inside a feature module.
+```ts
+import { RedisModule } from './redis.module';
 
+@Module({
+  imports: [
+    RedisModule.forFeature()
+  ]
+})
+class SomeModule {}
+```
+
+Then you'll be able to inject the RedisClient inside any provider.
 ```ts
 import { Injectable } from '@nestjs/common';
 import { InjectRedisClient, RedisClient } from '@webeleon/nestjs-redis';

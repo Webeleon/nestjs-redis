@@ -1,4 +1,4 @@
-import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
+import { DynamicModule, Module, Provider } from "@nestjs/common";
 import { RedisProvider } from "./redis.provider";
 import {
   REDIS_OPTIONS,
@@ -7,11 +7,12 @@ import {
 } from "./redis.config";
 import { REDIS_CLIENT } from "./redis.client";
 
-@Global()
 @Module({})
 export class RedisModule {
+  private static _module: DynamicModule;
+
   public static forRoot(options: RedisConnectionOptions): DynamicModule {
-    return {
+    RedisModule._module = {
       module: RedisModule,
       providers: [
         RedisProvider,
@@ -28,10 +29,11 @@ export class RedisModule {
       ],
       exports: [REDIS_CLIENT],
     };
+    return RedisModule._module;
   }
 
   public static forRootAsync(options: RedisModuleAsyncOptions): DynamicModule {
-    return {
+    RedisModule._module = {
       imports: options.imports,
       module: RedisModule,
       providers: [
@@ -46,6 +48,12 @@ export class RedisModule {
       ],
       exports: [REDIS_CLIENT],
     };
+
+    return RedisModule._module;
+  }
+
+  public static forFeature(): DynamicModule {
+    return RedisModule._module;
   }
 
   private static createConfigProviders(
