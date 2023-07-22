@@ -44,7 +44,7 @@
     "@types/jest": "27.5.2",
     "husky": "7.0.4",
     "jest": "27.5.1",
-    "lint-staged": "12.5.0",
+    "lint-staged": "13.2.3",
     "prettier": "2.8.8",
     "standard-version": "9.5.0",
     "ts-jest": "27.1.5",
